@@ -1,13 +1,12 @@
 {
-	"name": "p-cancelable",
+	"name": "@anton.bobrov/p-cancelable",
 	"version": "4.0.1",
-	"description": "Create a promise that can be canceled",
+	"description": "Create a promise that can be canceled. This is a fork of sindresorhus/p-cancelable",
 	"license": "MIT",
-	"repository": "sindresorhus/p-cancelable",
+	"repository": "antonbobrov/p-cancelable",
 	"author": {
-		"name": "Sindre Sorhus",
-		"email": "sindresorhus@gmail.com",
-		"url": "https://sindresorhus.com"
+		"name": "Anton Bobrov",
+		"email": "anton.bobrov@hotmail.com"
 	},
 	"type": "module",
 	"exports": "./index.js",
@@ -15,11 +14,19 @@
 		"node": ">=14.16"
 	},
 	"scripts": {
-		"test": "xo && ava && tsd"
+		"test": "xo && ava && tsd",
+		"build": "npm run build:esm && npm run build:cjs",
+		"build:esm": "tsc ./index.js --allowJs --module esnext --outDir ./lib/esm",
+		"build:cjs": "tsc ./index.js --allowJs --module commonjs --outDir ./lib/cjs",
+		"prepublishOnly": "npm run build"
 	},
+	"main": "lib/cjs/index.js",
+	"module": "lib/esm/index.js",
+	"types": "index.d.ts",
 	"files": [
 		"index.js",
-		"index.d.ts"
+		"index.d.ts",
+		"lib"
 	],
 	"keywords": [
 		"promise",
@@ -45,6 +52,7 @@
 		"ava": "^4.2.0",
 		"delay": "^5.0.0",
 		"tsd": "^0.20.0",
+		"typescript": "^5.2.2",
 		"xo": "^0.48.0"
 	}
 }

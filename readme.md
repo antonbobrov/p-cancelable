@@ -1,6 +1,6 @@
-# p-cancelable
+# @anton.bobrov/p-cancelable
 
-> Create a promise that can be canceled
+This is a fork of https://github.com/sindresorhus/p-cancelable
 
 Useful for animation, loading resources, long-running async computations, async iteration, etc.
 
@@ -9,7 +9,7 @@ Useful for animation, loading resources, long-running async computations, async 
 ## Install
 
 ```sh
-npm install p-cancelable
+npm install "@anton.bobrov/p-cancelable"
 ```
 
 ## Usage

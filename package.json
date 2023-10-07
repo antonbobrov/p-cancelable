@@ -1,6 +1,6 @@
 {
 	"name": "@anton.bobrov/p-cancelable",
-	"version": "4.0.1",
+	"version": "4.0.1-1",
 	"description": "Create a promise that can be canceled. This is a fork of sindresorhus/p-cancelable",
 	"license": "MIT",
 	"repository": "antonbobrov/p-cancelable",
@@ -8,8 +8,6 @@
 		"name": "Anton Bobrov",
 		"email": "anton.bobrov@hotmail.com"
 	},
-	"type": "module",
-	"exports": "./index.js",
 	"engines": {
 		"node": ">=14.16"
 	},

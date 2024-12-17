@@ -1,6 +1,6 @@
-# @anton.bobrov/p-cancelable
+# p-cancelable-cjs
 
-This is a fork of https://github.com/sindresorhus/p-cancelable
+This is a fork of https://github.com/sindresorhus/p-cancelable that supports both ESM & CJS.
 
 Useful for animation, loading resources, long-running async computations, async iteration, etc.
 
@@ -9,7 +9,7 @@ Useful for animation, loading resources, long-running async computations, async 
 ## Install
 
 ```sh
-npm install "@anton.bobrov/p-cancelable"
+npm install p-cancelable-cjs
 ```
 
 ## Usage
